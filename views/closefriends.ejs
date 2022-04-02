@@ -1,0 +1,10 @@
+<h1>Daftar Teman Dekat Anda</h1>
+
+<% if (partner.length < 1) { %>
+<p>Daftar teman masih kosong!</p>
+<% } else{ %> <% partner.forEach(p => { %>
+<ul>
+  <li>Nama: <%= p.nama %></li>
+  <li>Email: <%= p.email %></li>
+</ul>
+<% }) %> <% } %>
